@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+
+    <title>Music Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <audio src="./assets/music/6861654590_1.mp3" id="audio"></audio>
+      <div class="photo__music">
+        <img
+          src="./assets/img/photo_2026-11-06_23-19-56.jpg"
+          alt="music-photo"
+          class="photo__img"
+        />
+      </div>
+      <div class="mussic__wrapper">
+        <div class="music__info">
+          <span class="music__new">
+            <i class="fa-solid fa-music"></i>
+            Amirali Music Player</span
+          >
+          <h2 class="music__title"></h2>
+          <p class="music__artist"></p>
+
+          <div>
+            <input
+              type="range"
+              class="music__progress"
+              min="0"
+              value="0"
+              step="0.01"
+            />
+            <div class="music__time">
+              <span class="current__time">00:00</span>
+              <span class="total__time">00:00</span>
+            </div>
+          </div>
+
+          <div class="music__controls">
+            <div class="music__buttons">
+              <button class="prev__btn">
+                <i class="fas fa-step-backward"></i>
+              </button>
+              <button class="play__btn">
+                <i class="fas fa-play"></i>
+              </button>
+              <button class="next__btn">
+                <i class="fas fa-step-forward"></i>
+              </button>
+            </div>
+            <div class="volume__wrapper">
+              <i class="fa fa-volume-down"></i>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                value="1"
+                step="0.01"
+                class="volume__range"
+              />
+              <i class="fa fa-volume-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
